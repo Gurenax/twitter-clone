@@ -1,5 +1,8 @@
 # README
 
+# User Stories
+
+
 # Database (DB)
 ## ERD (Entity Relationship Diagram)
 ![erd database](/docs/images/erd.png)
@@ -37,3 +40,5 @@ I made 3 tables for my app, User, Tweet, and Profile. User stores the user infor
 - avatar
 - country
 - edit ability
+
+# Figma (wireframe)

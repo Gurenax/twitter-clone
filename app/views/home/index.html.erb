@@ -1,0 +1,9 @@
+<h1>
+    Twitter
+</h1>
+
+<ul>
+<% @tweets.each do |tweet| %>
+    <li><%= tweet.message %></li>
+<% end %>
+</ul>
