@@ -1,24 +1,39 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+# Database (DB)
+## ERD (Entity Relationship Diagram)
+![erd database](/docs/images/erd.png)
 
-Things you may want to cover:
+# DB Tables
+I made 3 tables for my app, User, Tweet, and Profile. User stores the user information like password etc. Tweet stores the information message that a user tweets and the Profile table stores information about the user. Each user has one Profie and many Tweets.
 
-* Ruby version
+## User
+- email
+- password
 
-* System dependencies
+## Profile
+- avatar
+- first_name
+- last_name
+- country
+- user_id (belongs_to)
 
-* Configuration
+## Tweet
+- message
+- user_id (belongs_to)
 
-* Database creation
+# Pages
+## homepage
+- tweets on page
+- log in/ log out
 
-* Database initialization
+## tweet show page
+- see tweet
+- edit tweet (if logged in)
 
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+## profile page
+- first_name, last_name
+- tweet count
+- avatar
+- country
+- edit ability
