@@ -12,3 +12,5 @@ tweets = [
     {message: 'I like Jake\'s cake'}
 ]
 Tweet.create(tweets)
+
+# Tweet.delete_all
