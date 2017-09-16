@@ -1,0 +1,13 @@
+<h1>Index Profiles</h1>
+
+<ul>
+    <% @profiles.each do |profile| %>
+    <li><%= profile.first_name %> |
+    <%= link_to 'show', profile %>
+    <%= link_to 'edit', edit_profile_path(profile) %>
+    <%= link_to 'delete', profile_path(profile), method: :delete, data: { confirm: 'Are you sure?' } %>
+    </li>
+    <% end %>
+</ul>
+
+<%= link_to 'New Profile', new_profile_path %>

@@ -4,6 +4,9 @@
 
 <ul>
 <% @tweets.each do |tweet| %>
-    <li><%= tweet.message %> | <%= tweet.user.email unless tweet.user.nil? %></li>
+    <li><%= tweet.message %> |
+    <%= tweet.user.email unless tweet.user.nil? %> |
+    <%= tweet.message %> |
+    </li>
 <% end %>
 </ul>
